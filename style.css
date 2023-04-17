@@ -1,4 +1,4 @@
-* {
+html {
   font-family: "Open Sans", sans-serif;
   margin: 0;
   padding: 0;
@@ -32,6 +32,19 @@ body {
   font-weight: 700;
 }
 
+.nav-cta-button {
+  width: 100%;
+  max-width: 700px;
+  padding: 15px;
+  border-radius: 30px;
+  font-size: 20px;
+  background-color: #000;
+  color: #fff;
+  font-weight: bolder;
+  margin-left: 10px;
+  margin-top: 25px;
+}
+
 .cta-button {
   width: 100%;
   max-width: 700px;
@@ -46,6 +59,10 @@ body {
 }
 
 /* Section 1 */
+p {
+  margin: 0;
+}
+
 .large-font {
   font-size: 45px;
 }
@@ -58,6 +75,7 @@ body {
   color: #69696a;
   margin-left: 20px;
   margin-right: 10px;
+  max-width: 690px;
 }
 
 .section-1 {
@@ -89,4 +107,92 @@ body {
   margin-top: 540px;
   width: 100%;
   padding-left: -100px;
+}
+
+/* Media Query */
+
+@media only screen and (min-width: 768px) {
+  /* Navigation */
+  .nav-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 3.125rem;
+  }
+
+  .top-menu li {
+    margin-bottom: 0;
+    margin-top: 1rem;
+  }
+
+  .top-menu {
+    display: flex;
+    flex-direction: row;
+    margin-right: 2rem;
+  }
+
+  .nav-cta-button {
+    width: 100px;
+    height: 50px;
+    font-size: 15px;
+    margin-top: 5px;
+  }
+
+  /* Section 1 */
+
+  .mid-section-1 {
+    justify-content: space-between;
+    display: flex;
+    margin-right: 3.75rem;
+  }
+  .paragraph-font {
+    width: calc(100% - 300px);
+    margin-bottom: 0;
+  }
+
+  .circles {
+    /* margin-top: 50px; */
+    /* margin-right: 30px; */
+    /* position: static; */
+    /* margin-left: 5rem; */
+    /* width: 100%; */
+    /* flex: 1; */
+  }
+
+  .large-circle {
+    position: relative;
+    top: 35px;
+    left: -50px;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background-color: rgba(247, 136, 167, 0.6);
+    z-index: 1;
+  }
+
+  .medium-circle {
+    position: relative;
+    top: -15px;
+    left: 29px;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: rgba(247, 193, 162, 0.7);
+    z-index: 3;
+  }
+
+  .small-circle {
+    position: relative;
+    top: -170px;
+    left: 65px;
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    background-color: rgba(207, 130, 213, 0.6);
+    z-index: 2;
+  }
+
+  .cta-button {
+    width: calc(100% - 384px);
+  }
 }
